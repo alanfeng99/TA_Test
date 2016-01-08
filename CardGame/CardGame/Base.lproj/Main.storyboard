@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="TxJ-ZE-8e1">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Djk-No-3Ph">
+            <objects>
+                <viewController id="TxJ-ZE-8e1" customClass="ViewController" customModule="CardGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7Co-Ft-ggD"/>
+                        <viewControllerLayoutGuide type="bottom" id="ktM-gY-ziT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WRi-d9-plJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ewy-y0-dcK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-98" y="372"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="hq8-Sf-vgM">
+            <objects>
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="tJq-gt-kJi" customClass="PageViewController" customModule="CardGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dJf-nc-Dp7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="266" y="372"/>
+        </scene>
+        <!--Card View Controller-->
+        <scene sceneID="vfs-Y1-Yq8">
+            <objects>
+                <viewController storyboardIdentifier="CardViewController" id="kxP-XX-col" customClass="CardViewController" customModule="CardGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ziD-Zf-0m3"/>
+                        <viewControllerLayoutGuide type="bottom" id="1j9-Xl-M1N"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="laX-3j-l7Z">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dCX-cx-yWK">
+                                <rect key="frame" x="16" y="28" width="288" height="288"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dCX-cx-yWK" secondAttribute="height" multiplier="1:1" id="suh-bt-P34"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAJ-0f-V0b">
+                                <rect key="frame" x="145" y="324" width="29" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C9I-C7-4hr">
+                                <rect key="frame" x="16" y="508" width="288" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="pRm-2m-LU3"/>
+                                </constraints>
+                                <state key="normal" title="抽卡"/>
+                                <connections>
+                                    <action selector="pickARandomCard:" destination="kxP-XX-col" eventType="touchUpInside" id="PRS-Fz-apt"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="sdfsfdaskldfjlskdjflsdkjflskdjfla;sdjflskdjfsldkjf sd jflkd jsld jsldkj fldj alkfj sldj afl;sdk j" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ian-0E-Ncj">
+                                <rect key="frame" x="16" y="352" width="288" height="148"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ian-0E-Ncj" firstAttribute="top" secondItem="HAJ-0f-V0b" secondAttribute="bottom" constant="7.5" id="363-9v-hoO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ian-0E-Ncj" secondAttribute="trailing" id="7Fz-0k-pdT"/>
+                            <constraint firstItem="HAJ-0f-V0b" firstAttribute="centerX" secondItem="laX-3j-l7Z" secondAttribute="centerX" id="8yN-sd-NMr"/>
+                            <constraint firstItem="C9I-C7-4hr" firstAttribute="top" secondItem="Ian-0E-Ncj" secondAttribute="bottom" constant="8" id="9ZG-AS-gUo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="C9I-C7-4hr" secondAttribute="trailing" id="KYw-ll-chj"/>
+                            <constraint firstItem="C9I-C7-4hr" firstAttribute="leading" secondItem="laX-3j-l7Z" secondAttribute="leadingMargin" id="KuB-rR-cIs"/>
+                            <constraint firstItem="HAJ-0f-V0b" firstAttribute="top" secondItem="dCX-cx-yWK" secondAttribute="bottom" constant="8" id="MUs-Ur-Ftm"/>
+                            <constraint firstItem="dCX-cx-yWK" firstAttribute="top" secondItem="ziD-Zf-0m3" secondAttribute="bottom" constant="8" id="Npp-YT-FUx"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Ian-0E-Ncj" secondAttribute="leading" id="Ofk-Gv-lkd"/>
+                            <constraint firstItem="1j9-Xl-M1N" firstAttribute="top" secondItem="C9I-C7-4hr" secondAttribute="bottom" constant="10" id="OgX-5e-hOT"/>
+                            <constraint firstItem="dCX-cx-yWK" firstAttribute="leading" secondItem="laX-3j-l7Z" secondAttribute="leadingMargin" id="fEv-nG-3Hh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dCX-cx-yWK" secondAttribute="trailing" id="fgV-q6-R1N"/>
+                            <constraint firstItem="Ian-0E-Ncj" firstAttribute="centerX" secondItem="laX-3j-l7Z" secondAttribute="centerX" id="nXf-0t-ySV"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="Ian-0E-Ncj" id="aw2-Wa-rO1"/>
+                        <outlet property="imageView" destination="dCX-cx-yWK" id="RnB-nN-rY2"/>
+                        <outlet property="titleLabel" destination="HAJ-0f-V0b" id="u34-Bd-RWY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DIh-yx-a80" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="623" y="372"/>
+        </scene>
+    </scenes>
+</document>
